@@ -13,12 +13,12 @@ darkcyan - hsl(179, 100%, 13%);*/
 }
 
 .carCard {
-  padding: 1rem;
+  padding: 1rem 1rem 3rem 1rem;
 }
 
 #sedanDiv {
   background-color: hsl(31, 77%, 52%);
-  border-radius: 1rem 0 0 1rem;
+  border-radius: .75rem 0 0 .75rem;
 }
 
 #suvDiv {
@@ -27,7 +27,7 @@ darkcyan - hsl(179, 100%, 13%);*/
 
 #luxuryDiv {
   background-color: hsl(179, 100%, 13%);
-  border-radius: 0 1rem 1rem 0;
+  border-radius: 0 .75rem .75rem 0;
 }
 
 .main-content {
@@ -53,14 +53,68 @@ darkcyan - hsl(179, 100%, 13%);*/
     line-height: 6rem;
 }
 
-.bttn {
-  border: 1.5px solid white;
-  border-radius: 100px;
-  padding: .75rem 0 0 0;
-  width: 50%;
+.bttn-cntr:hover {
+  border: 1.5px solid white !important;
+  background-color: transparent;
+}
+
+.bttn-cntr {
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 100px;
+    padding: 0.75rem 0 0 0;
+    width: 55%;
 }
 
 .bttn p {
-  color: hsla(0, 0%, 100%, .75);
-  
+  text-align: center;
 }
+
+.bttn-cntr {
+    position: absolute;
+    bottom: 2rem;
+}
+
+button {
+  border-radius: 100px !important;
+  background-color: hsl(0, 0%, 95%);
+  width: 60%;
+  height: 3rem !important;
+  position: absolute;
+  bottom: 2rem;
+  border: none !important;
+}
+
+button:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%) !important;
+  border: 1px solid hsl(0, 0%, 95%) !important;
+}
+
+#btnSed {
+  color:hsl(31, 77%, 52%);
+}
+
+#btnSuv {
+  color: hsl(184, 100%, 22%);
+}
+
+#btnLux {
+  color: hsl(179, 100%, 13%);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/*media queries*/
+@media (min-width: 1400px) {
+  #sedanDiv {
+  border-radius: .75rem 0 0 .75rem;
+  }
+}
+
+  @media (min-width: 1400px) {
+    #luxuryDiv {
+    border-radius: 0 .75rem .75rem 0;
+    }
+  }
